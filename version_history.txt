@@ -1,0 +1,6 @@
+Versions 001-003 - various incomplete features. Primarily attempts at grabbing layers and primitive transformations
+py_slice_004 - added transformation functions for rotate,transform,scale,unified_scale along with fixing find_layers to be 
+more reliable. Added classes defining meshes and planes, but unused at this time
+py_slice_005 - removed rotation transformation function as integrated library numpy-stl has a better rotation function. It does
+not include a scale function though, and it's transformation function is for one axis at a time. Also removed function dependency
+on being fed vertices list - now, it will simply call mesh.vertices if available and generate it if unavailable.
